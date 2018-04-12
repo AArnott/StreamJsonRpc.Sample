@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27610.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamJsonRpc.Sample", "StreamJsonRpc.Sample\StreamJsonRpc.Sample.csproj", "{C7412BC8-F608-48CA-A156-65669F284E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7412BC8-F608-48CA-A156-65669F284E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7412BC8-F608-48CA-A156-65669F284E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7412BC8-F608-48CA-A156-65669F284E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7412BC8-F608-48CA-A156-65669F284E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D362BF52-6BAF-410F-A6F8-44CD54B274F0}
+	EndGlobalSection
+EndGlobal
