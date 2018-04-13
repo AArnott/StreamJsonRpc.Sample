@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27610.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamJsonRpc.Sample.Client", "StreamJsonRpc.Sample.Client\StreamJsonRpc.Sample.Client.csproj", "{26BF246E-A3B0-4742-B97F-EAD1033E5145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamJsonRpc.Sample.Client", "StreamJsonRpc.Sample.Client\StreamJsonRpc.Sample.Client.csproj", "{26BF246E-A3B0-4742-B97F-EAD1033E5145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamJsonRpc.Sample.Server", "StreamJsonRpc.Sample.Server\StreamJsonRpc.Sample.Server.csproj", "{BA923639-F1E6-49F2-9A29-0C10787BA2C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamJsonRpc.Sample.Server", "StreamJsonRpc.Sample.Server\StreamJsonRpc.Sample.Server.csproj", "{BA923639-F1E6-49F2-9A29-0C10787BA2C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NamedPipe", "NamedPipe", "{42337919-7106-44EE-B66B-139141083103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocket", "WebSocket", "{A8A4C0AF-E386-477D-A3FE-4AAEB8F43E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamJsonRpc.Sample.Web", "StreamJsonRpc.Sample.Web\StreamJsonRpc.Sample.Web.csproj", "{873887DF-0B3E-42A9-95EE-2D51FDB48605}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{BA923639-F1E6-49F2-9A29-0C10787BA2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA923639-F1E6-49F2-9A29-0C10787BA2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA923639-F1E6-49F2-9A29-0C10787BA2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873887DF-0B3E-42A9-95EE-2D51FDB48605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873887DF-0B3E-42A9-95EE-2D51FDB48605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873887DF-0B3E-42A9-95EE-2D51FDB48605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873887DF-0B3E-42A9-95EE-2D51FDB48605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26BF246E-A3B0-4742-B97F-EAD1033E5145} = {42337919-7106-44EE-B66B-139141083103}
+		{BA923639-F1E6-49F2-9A29-0C10787BA2C8} = {42337919-7106-44EE-B66B-139141083103}
+		{873887DF-0B3E-42A9-95EE-2D51FDB48605} = {A8A4C0AF-E386-477D-A3FE-4AAEB8F43E89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D362BF52-6BAF-410F-A6F8-44CD54B274F0}
