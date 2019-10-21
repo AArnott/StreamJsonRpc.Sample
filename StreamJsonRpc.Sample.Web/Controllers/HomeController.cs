@@ -19,9 +19,13 @@ namespace StreamJsonRpc.Sample.Web.Controllers
             if (this.HttpContext.WebSockets.IsWebSocketRequest)
             {
                 var socket = await this.HttpContext.WebSockets.AcceptWebSocketAsync();
-                var jsonRpc = new JsonRpc(new WebSocketMessageHandler(socket), new JsonRpcServer());
-                jsonRpc.StartListening();
-                await jsonRpc.Completion;
+                using (var jsonRpc = new JsonRpc(new WebSocketMessageHandler(socket), new JsonRpcServer()))
+                {
+                    jsonRpc.CancelLocallyInvokedMethodsWhenConnectionIsClosed = true;
+                    jsonRpc.StartListening();
+                    await jsonRpc.Completion;
+                }
+
                 return new EmptyResult();
             }
             else
