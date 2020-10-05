@@ -12,8 +12,6 @@ namespace StreamJsonRpc.Sample.WebSocketClient
     {
         static async Task Main(string[] args)
         {
-            // Add this to your C# console app's Main method to give yourself
-            // a CancellationToken that is canceled when the user hits Ctrl+C.
             var cts = new CancellationTokenSource();
             Console.CancelKeyPress += (s, e) =>
             {
@@ -38,7 +36,7 @@ namespace StreamJsonRpc.Sample.WebSocketClient
             Console.WriteLine("Connecting to web socket...");
             using (var socket = new ClientWebSocket())
             {
-                await socket.ConnectAsync(new Uri("ws://localhost:22860/Home/Socket"), cancellationToken);
+                await socket.ConnectAsync(new Uri("wss://localhost:44392/socket"), cancellationToken);
                 Console.WriteLine("Connected to web socket. Establishing JSON-RPC protocol...");
                 using (var jsonRpc = new JsonRpc(new WebSocketMessageHandler(socket)))
                 {

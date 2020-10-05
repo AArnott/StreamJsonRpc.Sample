@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+
+#pragma warning disable VSTHRD200
 
 namespace StreamJsonRpc.Sample.Web.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class SocketController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> Socket()
+        public async Task<IActionResult> Index()
         {
             if (this.HttpContext.WebSockets.IsWebSocketRequest)
             {
